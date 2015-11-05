@@ -1,0 +1,24 @@
+{
+    "name": "venture-oak-labs/wsdl2php-generator-cli",
+    "description": "Console Client for wsdl2phpgenerator",
+    "license": "MIT",
+    "keywords": ["wsdl2phpgenerator", "console", "command"],
+    "authors": [
+        {
+            "name": "João Alves",
+            "email": "jalves.mdl@gmail.com"
+        }
+    ],
+    "require": {
+        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.2",
+        "symfony/console": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "VentureOakLabs\\Wsdl2PhpGenerator\\": "src"
+        }
+    }
+}
+
+
+
