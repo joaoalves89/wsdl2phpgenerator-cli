@@ -2,13 +2,13 @@
 
 namespace VentureOakLabs\Wsdl2PhpGenerator\Console\Command;
 
+use Wsdl2PhpGenerator\Generator;
+use Wsdl2PhpGenerator\Config;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-
-use Wsdl2PhpGenerator\Generator;
-use Wsdl2PhpGenerator\Config;
 
 /**
  * Makes a console command to generate PHP Class from a WSDL.
@@ -27,16 +27,14 @@ class Wsdl2PhpGeneratorCommand extends Command
         $this
             ->setName('wsdl2php-generator')
             ->setDescription('Simple WSDL to PHP classes converter. Takes a WSDL file and outputs class files ready to use')
-            ->addOption(
+            ->addArgument(
                'inputFile',
-               null,
-               InputOption::VALUE_REQUIRED,
+               InputArgument::REQUIRED,
                'The path or url to the WSDL to generate classes from'
             )
-            ->addOption(
+            ->addArgument(
                'outputDir',
-               null,
-               InputOption::VALUE_REQUIRED,
+               InputArgument::REQUIRED,
                'The directory to place the generated classes in. It will be created if it does not already exist'
             )
             ->addOption(
@@ -70,8 +68,8 @@ class Wsdl2PhpGeneratorCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $options = [
-            'inputFile' => $input->getOption('inputFile'),
-            'outputDir' => $input->getOption('outputDir')
+            'inputFile' => $input->getArgument('inputFile'),
+            'outputDir' => $input->getArgument('outputDir')
         ];
 
         if ($namespaceName = $input->getOption('namespaceName')) {
