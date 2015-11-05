@@ -16,7 +16,7 @@ Options exposed:
 ```bash
 php application.php wsdl2php-generator --help // view the options
 
-php application.php wsdl2php-generator --inputFile http://urltowsdl?wsdl --outputDir /var/www/demo/wsdl --namespaceName AcmeDemoBundle --operationNames doLoginActiveDirectory,doLoginAcme --soapClientOptions login,username --soapClientOptions password,secret
+php application.php wsdl2php-generator http://urltowsdl?wsdl /var/www/demo/wsdl --namespaceName AcmeDemoBundle --operationNames doLoginActiveDirectory,doLoginAcme --soapClientOptions login,username --soapClientOptions password,secret
 ```
 
  
