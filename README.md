@@ -2,9 +2,15 @@
 
 Simple Console Client to generate php classes from a wsdl file based on Wsdl2PhpGenerator Library
 
+### Get the package using composer
+
+```bash
+composer require venture-oak-labs/wsdl2php-generator-cli
+```
+
 Read the full documentation at https://github.com/wsdl2phpgenerator/wsdl2phpgenerator.
 
-Options exposed:
+### Options exposed:
 
 - inputFile https://github.com/wsdl2phpgenerator/wsdl2phpgenerator#inputfile
 - outputDir https://github.com/wsdl2phpgenerator/wsdl2phpgenerator#outputdir
@@ -12,6 +18,8 @@ Options exposed:
 - operationNames https://github.com/wsdl2phpgenerator/wsdl2phpgenerator#operationnames
 - soapClientClass https://github.com/wsdl2phpgenerator/wsdl2phpgenerator#soapclientclass
 - soapClientOptions https://github.com/wsdl2phpgenerator/wsdl2phpgenerator#soapclientoptions
+
+### Examples
 
 ```bash
 php application.php wsdl2php-generator --help // view the options
