@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "symfony/console",
-            "version": "v2.7.6",
+            "version": "v2.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5efd632294c8320ea52492db22292ff853a43766"
+                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5efd632294c8320ea52492db22292ff853a43766",
-                "reference": "5efd632294c8320ea52492db22292ff853a43766",
+                "url": "https://api.github.com/repos/symfony/console/zipball/16bb1cb86df43c90931df65f529e7ebd79636750",
+                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Console\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -61,20 +64,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-20 14:38:46"
+            "time": "2015-11-18 09:54:26"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v2.7.6",
+            "version": "v2.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "85fd10e551677d3c9a4632def78b8ec4670b247d"
+                "reference": "d6b7d3452b4cfff89b642993e02fea7cc254530e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/85fd10e551677d3c9a4632def78b8ec4670b247d",
-                "reference": "85fd10e551677d3c9a4632def78b8ec4670b247d",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/d6b7d3452b4cfff89b642993e02fea7cc254530e",
+                "reference": "d6b7d3452b4cfff89b642993e02fea7cc254530e",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +92,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\OptionsResolver\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -112,7 +118,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2015-10-11 09:39:48"
+            "time": "2015-11-18 13:41:01"
         },
         {
             "name": "wsdl2phpgenerator/wsdl2phpgenerator",
